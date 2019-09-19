@@ -1,0 +1,39 @@
+{
+  "name": "rollup-lib-template",
+  "version": "1.0.0",
+  "description": "Package to print some random fruit I eat.",
+  "main": "dist/eat-fruit.cjs.js",
+  "browser": "dist/eat-fruit.umd.js",
+  "module": "dist/eat-fruit.es.js",
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterfont/rollup-lib-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterfont/rollup-lib-template/issues"
+  },
+  "homepage": "https://github.com/peterfont/rollup-lib-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "core-js": "^2.6.9",
+    "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
